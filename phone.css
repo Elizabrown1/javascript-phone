@@ -1,0 +1,177 @@
+.top{
+	 position: absolute;
+   top: -50px;
+   width: 100%;
+   height: 50px;
+   background: #efefef;
+   border-top-left-radius :40px; 
+   border-top-right-radius :40px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:10');
+body {
+	font-family: 'Poppins',sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color:#140505;
+	font-family: sans-serif;
+
+
+}
+
+.top:before{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	background: #ccc ;
+	border: 2px solid #aaa;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px #999;
+}
+.top:after{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	width: 40px;
+	height: 3px;
+	background: #333 ;
+	border: 2px solid #aaa;
+	border-radius: 3px;
+
+}
+.menue{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	width: 15px;
+	height: 15px;
+	background: #333 ;
+	border: 2px solid #999;
+	border-radius: 3px;
+	cursor: pointer;
+	border-radius: 6px;
+
+
+}
+
+
+
+.mobile{
+	position: relative;
+   width: 270px;
+   height: 480px;
+   background: #020c17;
+
+}
+.bottom{
+   position: absolute;
+   bottom: -50px;
+   width: 100%;
+   height: 50px;
+   background: #efefef;
+   border-bottom-right-radius: 40px;
+   border-bottom-left-radius :40px;
+
+}
+
+.screen{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+
+	
+
+}
+.screen img {
+	position: absolute;
+	top: 0 ;
+	left: 0 ;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0 ;
+	transition: 0.5s
+
+}
+.screen.active img{
+	opacity: 1 ;
+}
+.screen:before{
+	content: '' ;
+	position:absolute;
+	top: 0;
+	left: -50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.1);
+	z-index: 1;
+	border: 2px solid #999;
+	cursor:pointer;
+	border-radius: 6px; 
+
+}
+h2{
+	color: #fff;
+	font-weight: 200;
+	font-size: 3.5em;
+	z-index: 1;
+	line-height: 0.4em;
+	transition: 0.5s;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	opacity: 0;
+
+}
+h2 span{
+   font-size: 0.4em;
+}
+.screen.active h2{
+	opacity: 1 ;
+	transform: translateX(0px);
+
+}
+.screen ul{
+	position: absolute;
+	padding: 0 ;
+	bottom: 0 ;
+	margin: 0 ;
+	z-index: 1 ;
+	display: inline;
+	justify-content: space-around;
+	width: 100%;
+
+}
+.screen ul li{
+	color: #fff;
+	font-size:1.5em;
+	cursor: pointer;
+	float: left;
+	opacity: 0 ;
+	padding-bottom: 30px;
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	list-style: none;
+
+}
+.screen.active ul li{
+     opacity: 1 ;
+
+}
+

@@ -1,0 +1,169 @@
+.top{
+	 position: absolute;
+   top: -50px;
+   width: 100%;
+   height: 50px;
+   background: #efefef;
+   border-top-left-radius :40px; 
+   border-top-right-radius :40px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:10');
+body {
+	font-family: 'Poppins',sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color:#140505;
+	font-family: sans-serif;
+
+
+
+}
+
+.top:before{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	background: #ccc ;
+	border: 2px solid #aaa;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px #999;
+}
+.top:after{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	width: 40px;
+	height: 3px;
+	background: #333 ;
+	border: 2px solid #aaa;
+	border-radius: 3px;
+
+}
+.menue{
+	content: '' ;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	width: 15px;
+	height: 15px;
+	background: #333 ;
+	border: 2px solid #999;
+	border-radius: 3px;
+	cursor: pointer;
+	border-radius: 6px;
+}
+.mobile{
+	position: relative;
+   width: 270px;
+   height: 480px;
+   background: #020c17;
+   margin-left: 30px;
+
+}
+.bottom{
+   position: absolute;
+   bottom: -50px;
+   width: 100%;
+   height: 50px;
+   background: #efefef;
+   border-bottom-right-radius: 40px;
+   border-bottom-left-radius :40px;
+
+}
+.screen{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+}
+
+#every{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+.pin{
+	background-color: #EFEFEF;
+	height: 46.6vh;
+	width: 98.5%;
+	margin-top: -110%;
+	margin-left: 2px;
+	font-weight: bolder;
+	border-bottom: #ab491d 10px solid;
+	/*text-align: center;*/
+
+}
+
+.a,.b,.c,.d,.e{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+	cursor: pointer;
+	font-size: 30px;
+	font-family: arial;
+}
+
+#input{
+	margin-top: -150%;
+}
+#screenb{
+background-color: #020C17;
+width: 98%;
+margin-left: 2px;
+height: 93px;
+border:none;
+color: white;
+/*border-bottom: 6px solid #E6E6E6;*/
+outline: none;
+
+
+}
+
+.result{
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 60px;
+}
+.a3{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -160px;
+}
+.a1{
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -120px;
+}
+.a2{
+	position: absolute;
+	margin-left: 500px;
+	margin-top: -120px;
+}
+.button1{
+	position: absolute;
+	margin-left: 570px;
+	margin-top: -120.5px;
+}
+.button2{
+	position: absolute;
+	margin-left: 650px;
+	margin-top: -120.5px;
+}
+#dddd{
+	margin-top: -101px;
+}
